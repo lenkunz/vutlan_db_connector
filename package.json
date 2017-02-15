@@ -2,7 +2,7 @@
   "name": "vutlan_database_connector",
   "version": "1.0.0",
   "description": "",
-  "main": "db_connector.js",
+  "main": "dist/vutlan_database_connector.bundle.js",
   "scripts": {
     "test": "./node_modules/.bin/mocha --reporter spec"
   },
@@ -18,5 +18,12 @@
     "randomstring": "^1.1.5",
     "sqlite3": "^3.1.8",
     "trimmer": "^1.0.0"
+  },
+  "devDependencies": {
+    "babel-core": "^6.23.1",
+    "babel-loader": "^6.3.1",
+    "babel-preset-es2015": "^6.22.0",
+    "webpack": "^2.2.1",
+    "webpack-node-externals": "^1.5.4"
   }
 }

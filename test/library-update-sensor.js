@@ -4,7 +4,7 @@ var randomString = require('randomstring');
 var trimmer = require('trimmer');
 
 var should = require('chai').should();
-var libs = require('../db_connector');
+var libs = require('../src/db_connector');
 
 describe("Library#updateSensors", () => {
     let lib = libs();

@@ -3,8 +3,8 @@ var trimmer = require('trimmer');
 var joi = require('joi');
 
 var should = require('chai').should();
-var knex = require('../db/knex');
-var libs = require('../db_connector');
+var knex = require('../src/db/knex');
+var libs = require('../src/db_connector');
 
 describe(`Library's`, () => {
     it('should be fine accept knex object', done => {
@@ -403,5 +403,9 @@ describe(`Library's`, () => {
                 .catch(err => done());
             });
         })
+		
+		it("Should load library", () => {
+			console.log("TEST", require("../dist/vutlan_database_connector.bundle.js"));
+		});
     });
 });

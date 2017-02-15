@@ -1,0 +1,1 @@
+console.log(require('./dist/vutlan_database_connector.bundle'))

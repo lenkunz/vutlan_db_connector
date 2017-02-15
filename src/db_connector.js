@@ -8,10 +8,25 @@ var dbInfo = {
     password: "",
     database: "laravel_test"
 };
-
 var proto = {};
-var libsInfo = function(){
-    return new libs(knex);
+var libsInfo = function(options){
+    return new libs(require('knex')(
+		{
+			client: options.client || 'mysql',
+			connection: {
+			  database: options.database,
+			  user:     options.user,
+			  password: options.pass
+			},
+			pool: {
+			  min: options.poolMin || 2,
+			  max: options.poolMax || 10
+			},
+			migrations: {
+			  tableName: 'knex_migrations'
+			}
+		}
+	));
 }
 
 var libs = function(_knex){
