@@ -1,0 +1,18 @@
+{
+	"mid": "2",
+	"name": "\"VT1108\"",
+	"date_time": "2016-12-24T21:28:02+07:00",
+	"sensors": [{
+		"index": "302008",
+		"sid": "302008",
+		"group": "13",
+		"module": "2012",
+		"num": "8",
+		"class": "switch",
+		"type": "outlet",
+		"name": "Outlet-8",
+		"state": "off",
+		"value": "0",
+		"spec": ""
+	}]
+}

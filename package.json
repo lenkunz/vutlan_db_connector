@@ -1,0 +1,22 @@
+{
+  "name": "database_connector",
+  "version": "1.0.0",
+  "description": "",
+  "main": "db_connector.js",
+  "scripts": {
+    "test": "./node_modules/.bin/mocha --reporter spec"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "bookshelf": "^0.10.3",
+    "chai": "^3.5.0",
+    "joi": "^10.2.0",
+    "knex": "^0.12.6",
+    "mocha": "^3.2.0",
+    "mysql": "^2.13.0",
+    "randomstring": "^1.1.5",
+    "sqlite3": "^3.1.8",
+    "trimmer": "^1.0.0"
+  }
+}
