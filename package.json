@@ -1,5 +1,5 @@
 {
-  "name": "database_connector",
+  "name": "vutlan_database_connector",
   "version": "1.0.0",
   "description": "",
   "main": "db_connector.js",
